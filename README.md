@@ -1,6 +1,8 @@
+[![GoDoc](https://godoc.org/github.com/nklizhe/obscure?status.svg)](https://godoc.org/github.com/nklizhe/obscure)
+
 obscure
 =======
-(Security through obscurity)[https://en.wikipedia.org/wiki/Security_through_obscurity].
+[Security through obscurity](https://en.wikipedia.org/wiki/Security_through_obscurity).
 
 Generates Go code for embedding secret text in your code.
 
