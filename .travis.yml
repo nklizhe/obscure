@@ -1,0 +1,11 @@
+language: go
+
+go:
+  - 1.2
+  - 1.4
+
+install:
+  - go get github.com/stretchr/testify/assert
+  - go get github.com/nklizhe/obscure
+
+script: go test .

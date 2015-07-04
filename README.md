@@ -1,4 +1,4 @@
-[![GoDoc](https://godoc.org/github.com/nklizhe/obscure?status.svg)](https://godoc.org/github.com/nklizhe/obscure)
+[![GoDoc](https://godoc.org/github.com/nklizhe/obscure?status.svg)](https://godoc.org/github.com/nklizhe/obscure) [![Build Status](https://travis-ci.org/nklizhe/obscure.svg?branch=master)](https://travis-ci.org/nklizhe/obscure)
 
 obscure
 =======
