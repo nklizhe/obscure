@@ -8,4 +8,6 @@ install:
   - go get github.com/stretchr/testify/assert
   - go get github.com/nklizhe/obscure
 
-script: go test .
+script: 
+  - go test .
+  - go build ./cmd/obscure

@@ -8,7 +8,7 @@ Generates Go code for embedding secret text in your code.
 
 ## Install
 ```
-go get github.com/nklizhe/obscure
+go get github.com/nklizhe/obscure/cmd/obscure
 ```
 
 ## Usage
