@@ -16,10 +16,14 @@ go get github.com/nklizhe/obscure/cmd/obscure
 cat my_private_key.txt | obscure
 ```
 
+# Author
+
+* LI ZHE, Tom <nklizhe@gmail.com>
+
 # License
 The MIT License (MIT)
 
-Copyright (c) 2015 Li Zhe
+Copyright (c) 2015 LI ZHE
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
