@@ -135,12 +135,12 @@ import (
 )
 
 var (
-	data{{.Name}} = {{.Data}}
-	key{{.Name}} = {{.Key}}
 )
 
 // decode{{.Name}} decrypts and returns the original text
 func decode{{.Name}}() ([]byte, error){
+	data{{.Name}} := {{.Data}}
+	key{{.Name}} := {{.Key}}
 	block, err := aes.NewCipher(key{{.Name}})
 	if err != nil {
 		return nil, err

@@ -66,7 +66,10 @@ func main() {
 	}()
 
 	// obscure
-	ob := obscure.NewDefaultObscurer(rand.Reader, obscure.DefaultObscurerOptions{})
+	ob := obscure.NewDefaultObscurer(rand.Reader, obscure.DefaultObscurerOptions{
+		PkgName: pkgName,
+		VarName: name,
+	})
 	if err := ob.Obscure(in, out); err != nil {
 		log.Fatal(err)
 	}
