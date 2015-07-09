@@ -45,7 +45,7 @@ func main() {
 	if output == "stdout" || output == "" {
 		out = os.Stdout
 	} else {
-		if path.Ext(output) != "go" {
+		if path.Ext(output) != ".go" {
 			output = fmt.Sprintf("%s.go", output)
 		}
 		out, err = os.Create(output)

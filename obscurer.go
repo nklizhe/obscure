@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
+	"strings"
 	"text/template"
 )
 
@@ -118,8 +119,8 @@ func (ob *DefaultObscurer) render(output io.Writer, data []byte) error {
 		return err
 	}
 	return tmpl.Execute(output, templateData{
-		Package: ob.pkgName,
-		Name:    ob.varName,
+		Package: strings.ToLower(ob.pkgName),
+		Name:    strings.Title(ob.varName),
 		Key:     outPass.String(),
 		Data:    outData.String(),
 	})
@@ -134,10 +135,7 @@ import (
 	"errors"
 )
 
-var (
-)
-
-// decode{{.Name}} decrypts and returns the original text
+// decode{{.Name}} decrypts and returns the original data
 func decode{{.Name}}() ([]byte, error){
 	data{{.Name}} := {{.Data}}
 	key{{.Name}} := {{.Key}}
